@@ -4,8 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [tool.setuptools.packages.find]
 where = ["."]  # list of folders that contain the packages (["."] by default)
-include = ["calibrate_cv"]  # package names should match these glob patterns (["*"] by default)
-exclude = ["images"]  # exclude packages matching these glob patterns (empty by default)
+exclude = ["images", "test*", "docs"]  # exclude packages matching these glob patterns (empty by default)
 namespaces = false  # to disable scanning PEP 420 namespaces (true by default)
 
 [project]
@@ -23,8 +22,8 @@ classifiers = [
     "Operating System :: OS Independent",
 ]
 dependencies = [
-    "numpy==1.22.0",
-    "pandas"
+    "cog_cv_imagenet@git+https://github.com/Coargus/image-loader-imagenet.git",
+    "cvias@git+https://github.com/Coargus/computer-vision-inference-and-server.git"
 ]
 
 [project.urls]
