@@ -15,7 +15,7 @@ authors = [
 ]
 description = "A small example package"
 readme = "README.md"
-requires-python = ">=3.9"
+requires-python = ">=3.8"
 classifiers = [
     "Programming Language :: Python :: 3",
     "License :: OSI Approved :: MIT License",
@@ -23,7 +23,9 @@ classifiers = [
 ]
 dependencies = [
     "cog_cv_imagenet@git+https://github.com/Coargus/image-loader-imagenet.git",
-    "cvias@git+https://github.com/Coargus/computer-vision-inference-and-server.git"
+    "cvias@git+https://github.com/Coargus/computer-vision-inference-and-server.git",
+    "pandas",
+    "numpy",
 ]
 
 [project.urls]

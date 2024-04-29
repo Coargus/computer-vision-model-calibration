@@ -70,12 +70,13 @@ if __name__ == "__main__":
         "bench",
         "knife",
         "chair",
+        "cell phone",
         "traffic light",
         "stop sign",
     ]
     calibration_dataset = {}
     for obj in subset:
-        data = dataset.get_all_images_by_label(obj)
+        data = dataset.get_all_images_by_label(obj.replace(" ", "_"))
         calibration_dataset[obj] = data
 
     # 3. Run a runner.
