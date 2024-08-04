@@ -23,7 +23,7 @@ class ComputerVisionModelCalibrator:
         self.method = method
         self.distribution = {}
 
-    def update_distribution(  # noqa: PLR0913
+    def update_distribution(
         self,
         ground_truth_class_id: any,
         ground_truth_label: str,
