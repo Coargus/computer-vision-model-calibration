@@ -23,7 +23,6 @@ classifiers = [
 ]
 dependencies = [
     "cog_cv_imagenet@git+https://github.com/Coargus/image-loader-imagenet.git",
-    "cvias@git+https://github.com/Coargus/computer-vision-inference-and-server.git",
     "pandas",
     "numpy",
 ]
