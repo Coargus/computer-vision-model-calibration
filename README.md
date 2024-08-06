@@ -6,3 +6,6 @@ This repository provide a modules and package to calibrate computer vision model
 ```bash
 make install
 ```
+
+## Usage
+See the run scripts in `./scripts`
